@@ -1,0 +1,8 @@
+<%- include ('partials/template/header.ejs') %>
+
+<h2><%= pageTitle %></h2>
+<%= pageID %>
+
+<% if (user) { %>
+    <h2><%= user.name %></h2>
+<% } %>
