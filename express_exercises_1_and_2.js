@@ -4,6 +4,8 @@ const port = 3000;
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
+
+//Create a public folder in your project. Setup express to serve up all files within the public folder. 
 app.use(express.static('public'))
 
 app.get('/feedback', function(req, res){
