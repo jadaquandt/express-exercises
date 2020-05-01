@@ -4,6 +4,7 @@ const port = 3000;
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
+app.use(express.static('public'))
 
 app.get('/feedback', function(req, res){
     res.render('feedback', {
