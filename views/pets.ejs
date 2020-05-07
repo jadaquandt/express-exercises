@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="/style.css">
+
+<% for (let i=0; i < data.length; i++) { %>
+   <img src='<%= data[i].imgURL %>' />
+    <h3 id="petName"><%= data[i].name%></h3>
+    <p id="petDescription"><%= data[i].description %></p>
+    <% } %>
+
+<hr>
+<%- include ('new_partials/templates/footer2.ejs') %>

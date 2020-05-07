@@ -1,0 +1,26 @@
+[{  
+    "name":"Smol Dog",
+    "description":"This is a small dog also known as a puppy!",
+    "imgURL":"images/smoldog.jpg"
+ },
+ {  
+    "name":"Dark Dog",
+    "description":"This dog is goth as hell!",
+    "imgURL":"images/blackdog.jpg"
+ },
+ {  
+    "name":"Big Doggo",
+    "description":"Dang! That's a big ole dog. He might eat that kid!",
+    "imgURL":"images/bigdoggo.jpg"
+ },
+ {  
+    "name":"Smol cat",
+    "description":"This is a small cat also known as a kitten!",
+    "imgURL":"images/kitten.jpg"
+ },
+ {  
+    "name":"Dark cat",
+    "description":"This cat is also goth as hell!",
+    "imgURL":"images/darkkitty.jpg"
+ }
+]

@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+const petsData = require('./animals.json');
+
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
@@ -75,6 +77,17 @@ app.get('/year', function(req, res){
     res.send ('You were born in ' + yearBorn);
 
     });
+
+// Create a front page for your project with a new EJS layout. 
+// Use the header and footer from your partials folder.  
+// In the body of your front page, include all of the 
+// pictures or your pets from your json string by using a for loop.
+
+app.get('/animal-pics', function(req, res){
+    res.render('pets', {
+        data: petsData
+    }); 
+});
     
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
 
